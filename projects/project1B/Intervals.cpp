@@ -208,7 +208,7 @@ void interval_calculator()
                 }
                 std::cout << "[" << a << ", " << b << "]" << std::endl;
             }
-            
+
         }
         else if (str == "scalar_divide")
         {
@@ -300,7 +300,7 @@ void interval_calculator()
                     std::cout << "[" << a << ", " << b << "]" << std::endl;
                 }
             }
-            
+
         }
         else if (str == "interval_subtract")
         {
@@ -330,7 +330,7 @@ void interval_calculator()
                     std::cout << "[" << a << ", " << b << "]" << std::endl;
                 }
             }
-            
+
         }
         else if (str == "interval_multiply")
         {
@@ -356,7 +356,7 @@ void interval_calculator()
                 else
                 {
                     double max{0}, min{0};
-                    
+
                     if ( (a*c) > (a*d) )
                     {
                         max = (a*c);
@@ -419,7 +419,7 @@ void interval_calculator()
                 else
                 {
                     double max{0}, min{0};
-                    
+
                     if ( (a/c) > (a/d) )
                     {
                         max = (a/c);
@@ -567,7 +567,7 @@ void interval_calculator()
                     }
                     std::cout << "[" << a << ", " << b << "]" << std::endl;
                 }
-                
+
             }
         }
         else if (str == "exit")

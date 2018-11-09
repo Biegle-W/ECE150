@@ -26,6 +26,6 @@ int main()
         b = temp;
         std::cout << "Corrected to [" << a << ", " << b << "]. " << std::endl;
     }
-    
+
     return 0;
 }

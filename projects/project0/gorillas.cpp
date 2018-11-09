@@ -50,7 +50,7 @@ int main()
         << computed_range(600, launch_angle[i], 10)
         << std::endl;
     }
-    
+
     return 0;
 }
 

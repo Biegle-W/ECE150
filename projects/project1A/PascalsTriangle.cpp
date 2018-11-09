@@ -32,6 +32,16 @@ int pascal_triangle( int n)
     return (n+1)*(n+2)/2;
 }
 
+int generate_number(int row, int column)
+{
+    if (column == 1 || column == row + 1){
+        return 1;
+    }
+    else{
+        return generate_number(row - 1, column - 1) + generate_number(row - 1, column);
+    }
+}
+
 int pascal_triangle_recursive(int n)
 {
     for (std::size_t i = 0; i <= n; ++i){
@@ -43,17 +53,6 @@ int pascal_triangle_recursive(int n)
     }
     return (n+2)*(n+1)/2;
 }
-
-int generate_number(int row, int column)
-{
-    if (column == 1 || column == row + 1){
-        return 1;
-    }
-    else{
-        return generate_number(row - 1, column - 1) + generate_number(row - 1, column);
-    }
-}
-
 
 #ifndef MARMOSET_TESTING
 int main()

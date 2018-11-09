@@ -1,0 +1,27 @@
+/Users/chenwang/OneDrive/ECE150/assignments/assignment4.cpp:15:10: error: expected ';' at end of declaration
+    int a{0}, b{0};
+         ^
+         ;
+/Users/chenwang/OneDrive/ECE150/assignments/assignment4.cpp:16:22: error: use of undeclared identifier 'b'
+    std::cin >> a >> b;
+                     ^
+/Users/chenwang/OneDrive/ECE150/assignments/assignment4.cpp:19:29: error: use of undeclared identifier 'b'
+        illegal_interval(a, b);
+                            ^
+/Users/chenwang/OneDrive/ECE150/assignments/assignment4.cpp:23:59: error: use of undeclared identifier 'b'
+        std::cout << "Illegal interval [" << a << ", " << b << " identified. ";
+                                                          ^
+/Users/chenwang/OneDrive/ECE150/assignments/assignment4.cpp:24:17: error: expected ';' at end of declaration
+        int temp{a};
+                ^
+                ;
+/Users/chenwang/OneDrive/ECE150/assignments/assignment4.cpp:25:13: error: use of undeclared identifier 'b'
+        a = b;
+            ^
+/Users/chenwang/OneDrive/ECE150/assignments/assignment4.cpp:26:9: error: use of undeclared identifier 'b'
+        b = temp;
+        ^
+/Users/chenwang/OneDrive/ECE150/assignments/assignment4.cpp:27:55: error: use of undeclared identifier 'b'
+        std::cout << "Corrected to [" << a << ", " << b << "]. " << std::endl;
+                                                      ^
+8 errors generated.

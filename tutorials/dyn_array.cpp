@@ -65,8 +65,6 @@ void append_elements(flex_array_t & to_append, double to_add[], int num_add)
       p_new[index_new + to_append.quantity] = to_add[index_new];
     }
 
-    std::cout << "p_new[0]: " << p_new[0] << std::endl;
-
     // deallocate old array
     delete [] to_append.a_values;
 
@@ -78,8 +76,6 @@ void append_elements(flex_array_t & to_append, double to_add[], int num_add)
 
     // update quantity
     to_append.quantity += num_add;
-
-    std::cout << "quantity: " << to_append.quantity << std::endl;
   }
   else
   {

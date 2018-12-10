@@ -32,21 +32,24 @@ int pascal_triangle( int n)
     return (n+1)*(n+2)/2;
 }
 
-int generate_number(int row, int column)
+int recursive_help(int row, int column)
 {
-    if (column == 1 || column == row + 1){
+    if (column == 1 || column == row + 1)
+    {
         return 1;
     }
-    else{
-        return generate_number(row - 1, column - 1) + generate_number(row - 1, column);
+    else
+    {
+        return recursive_help(row - 1, column - 1) + recursive_help(row - 1, column);
     }
 }
 
 int pascal_triangle_recursive(int n)
 {
     for (std::size_t i = 0; i <= n; ++i){
-        for (std::size_t k = 1; k <= i + 1; ++k){
-            std::cout << generate_number(i, k);
+        for (std::size_t j = 1; j <= i + 1; ++j)
+        {
+            std::cout << recursive_help(i, j);
             std::cout << " ";
         }
         std::cout << std::endl;
